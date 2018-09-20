@@ -1,27 +1,19 @@
-package automationTest;
+package JavaPgm;
 
-public class StringManipulation {
-
+public class StringManipulation 
+{
 	public static void main(String[] args)
 	{
-		String s="JuVERia";
-		String s1="";
-		for(int i=0;i<s.length();i++)
-		{
-			char ch=s.charAt(i);
-			String s2=Character.toString(ch);
-			if (s2.matches("[a-z?]"))
-			{
-	          s1=s1+s2.toUpperCase();
-			}
-			else
-			{
-				s1=s1+s2.toLowerCase();
-			}
-		}
-		
-		System.out.println(s1);
-
+		String s="the rain has started here";
+		int length=s.length();
+		System.out.println("length of String is "+length);
+		char ch=s.charAt(5);
+		System.out.println("Char at 5th is "+ch);
+		int ind=s.indexOf('s');
+		System.out.println("index of s "+ind);
+		int ind1=s.indexOf('s', 5);
+		System.out.println("index of s "+ind1);
+	
 	}
 
 }

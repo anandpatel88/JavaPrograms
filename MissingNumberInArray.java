@@ -1,4 +1,4 @@
-package automationTest;
+package JavaPgm;
 
 public class MissingNumberInArray {
 
@@ -12,7 +12,7 @@ public class MissingNumberInArray {
 			actualSum=actualSum+j;
 		}
 		int missingNum=expecedSum-actualSum;
-		System.out.println("missing num is: "+missingNum);
+		System.out.println(missingNum);
 	}
 
 }

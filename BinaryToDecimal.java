@@ -1,22 +1,21 @@
-package automationTest;
+package JavaPgm;
 
 public class BinaryToDecimal {
 
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		int i=101010011;
-		int rem=0;
-		int twoPower=1;
-		int dec=0;
-		while(i>0)
-		{
-			rem=i%10;
-			dec=dec+rem*twoPower;
-			twoPower=twoPower*2;
-			i=i/10;
-		}
+		long bin=1110;
+		int rem=0, sum=0, i=1;
 		
-		System.out.println(dec);
+		while(bin>0)
+		{
+			rem=(int) (bin%10);
+			sum=sum+(rem)*i;
+			i=i*2;
+			bin=bin/10;
+		}
+		System.out.println(sum);
+
 	}
 
 }
